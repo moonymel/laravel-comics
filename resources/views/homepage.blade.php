@@ -17,9 +17,27 @@
 
 
 <body>
-    
     @include('partials.header')
-    blablablabla 
+    
+
+    <div class="my-jumbotron">
+
+    </div> 
+
+    <main>
+        <div class="container">
+            <div class="row">
+                @foreach ($comics as $comic)
+                <div class="col-2 my-card my-3">
+                    <div class="image">
+                        <img src="{{ $comic['thumb'] }}">
+                    </div>
+                    {{ $comic['title'] }}
+                </div>
+                @endforeach
+            </div>
+        </div>
+    </main>
 
     @include('partials.footer')
 
