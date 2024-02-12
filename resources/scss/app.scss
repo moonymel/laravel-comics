@@ -1,1 +1,24 @@
 @import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+header {
+    font-family: 'Bebas Neue';
+    background-color: white;
+    color: rgb(41, 41, 41);
+    font-size: 20px;
+
+    img {
+        width: 100px;
+    }
+
+    li {
+        display: inline-block;
+        padding: 0px 20px;
+
+        &.active {
+            color: #0282f9;
+            border-bottom: 4px solid #0282f9;
+            padding-bottom: 44px;
+        }
+    }
+}
