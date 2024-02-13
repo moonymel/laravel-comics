@@ -85,3 +85,25 @@ main {
         }
     }
 }
+
+.blue-line {
+    background-color: $light_blue;
+
+    .section {
+        text-transform: uppercase;
+        font-size: 14px;
+        margin: 40px 0px;
+
+        img {
+            height: 50px;
+            vertical-align: middle;
+            margin-right: 10px;
+
+            &.visa {
+                height: 35px;
+                margin-top: 10px;
+            }
+        }
+    }
+
+}

@@ -19,4 +19,16 @@
             <button>load more</button>
         </div>
         </div>
+
+        <div class="blue-line">
+            <div class="container d-flex justify-content-between">
+                @foreach ($bluesections as $section)
+                <div class="section">
+                    <img src="{{ Vite::asset($section['image']) }}" class="{{ $section['title'] == 'DC Power Visa' ? 'visa' : '' }}">
+                    {{ $section['title'] }}
+                </div>
+                @endforeach
+            </div>
+            
+        </div>
  @endsection
