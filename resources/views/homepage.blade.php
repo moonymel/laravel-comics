@@ -1,6 +1,8 @@
 @extends('layout.app')
 
-@section('content')      
+@section('content')   
+
+<main>
         <div class="container">
             <div class="title-one px-2 py-1 text-center">
                 current series
@@ -31,4 +33,5 @@
             </div>
             
         </div>
+    </main>
  @endsection
