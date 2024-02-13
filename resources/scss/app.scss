@@ -84,6 +84,11 @@ main {
             @include small_button
         }
     }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
 }
 
 .blue-line {

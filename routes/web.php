@@ -18,3 +18,17 @@ Route::get('/', function () {
     $bluesections = config('bluesections');
     return view('homepage', compact('comics', 'bluesections'));
 })->name('homepage');
+
+
+Route::get('/comics/{param}', function ($id) {
+    $comics = config('comics');
+    $comic = null;
+
+    foreach($comics as $item){
+        if($item['id'] == $id) {
+            $comic = $item;
+        }
+    }
+
+    return view('comic', compact('comics'));
+})->name('comic');
